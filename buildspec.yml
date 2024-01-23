@@ -9,5 +9,5 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 cp ./build s3://react-components-portfolio --recursive
-      - aws cloudfront create-invalidation --distribution-id E3QNVEPCZO02IB --path /\*
+      - aws s3 cp ./build s3://domsoldo-components --recursive
+      - aws cloudfront create-invalidation --distribution-id E1VFDHOUIRRYH0 --path /\*
